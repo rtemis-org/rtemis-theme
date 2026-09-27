@@ -22,7 +22,7 @@ highlighted without running code. Inline code looks like `train(iris)`.
 mod <- train(
   iris,
   hyperparameters = setup_CART(maxdepth = c(2L, 3L)),
-  outer_resampling_config = setup_Resampler()
+  outer_resampling_config = setup_KFold()
 )
 describe(mod)
 

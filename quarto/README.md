@@ -8,9 +8,8 @@ without a build step.
 
 ## Use in a book
 
-Copy this directory into your book as `themes/rtemis/`, including the license and
-third-party notices. Set the website accent directly in each copied SCSS file.
-Merge the following into the book's `_quarto.yml`:
+Use this directory as the shared source for all books, including the SCSS
+partials, syntax palettes, license, and notices. Merge into `_quarto.yml`:
 
 ```yaml
 format:
@@ -23,17 +22,31 @@ format:
       dark: themes/rtemis/rtemis-dark.theme
 ```
 
-The SCSS files are complete custom themes; no Bootswatch base theme is needed.
-For each website, edit `$rthighlight` near the top of its local
-`rtemis-light.scss` and `rtemis-dark.scss`, for example:
+The SCSS files are complete custom themes; no Bootswatch base or additional
+site stylesheet is needed. `_rtemis-defaults.scss` owns Geist/Geist Mono font
+families and the compact navbar (0.375rem vertical padding per side). `_rtemis-rules.scss` owns font loading, code-language labels, image
+and spacing helpers, title metadata, DataTables dark styles, cards, buttons,
+and callouts. Both color modes import the same partials.
 
-```scss
-$rthighlight: #ff4f36 !default;
+Change shared appearance here rather than editing consumer copies. The accent
+`$rthighlight` in the two mode files controls links, primary controls, sidebar
+highlights, and the webR run icon. Syntax colors are independent of the accent.
+
+For a book's front page, opt in to the shared landing layout:
+
+```yaml
+format:
+  html:
+    body-classes: rtemis-landing
 ```
 
-The accent controls primary UI colors, links, sidebar highlights, and the webR
-run icon. Set the same value in both files or choose a different accent per mode.
-Syntax colors stay paired with the editor themes.
+This hides the title block and TOC, aligns the content with the sidebar, and uses
+42px headings. It does not affect ordinary chapter pages. Logos and navigation
+content remain book metadata. The unused legacy logo-mask rule is not included.
+
+`rtemis-exercises.scss` is an optional webR/webexercises integration; append it
+to both mode theme lists only for books that use those interactive controls.
+It is not loaded by default.
 
 Quarto ignores highlighting-file backgrounds when using adaptive light/dark
 highlighting. The SCSS supplies the neutral code backgrounds: `#F7F7F7` in light
@@ -41,11 +54,9 @@ mode and `#303030` in dark mode. Page backgrounds retain the website defaults,
 white in light mode and `#181818` in dark mode. The `Normal` token style sets code
 foregrounds in both modes, including text without a specialized token.
 
-When migrating from separate website and code SCSS files, replace both entries
-with the matching consolidated SCSS. Keep independent
-site CSS, such as font and layout rules, in the existing `css:` configuration.
-Use a single `syntax-highlighting` setting and remove obsolete `highlight-style`
-settings that select a different palette.
+When migrating, remove the old duplicate website/font/layout CSS and use one
+`syntax-highlighting` setting instead of `highlight-style: atom-one`. The shared
+theme owns code/output surfaces; avoid consumer CSS that overrides them.
 
 For a single-mode HTML book:
 
@@ -70,9 +81,13 @@ The configurations above were checked with Quarto 1.10.18 and its Pandoc 3.10.
 
 ## Share updates across books
 
-Keep the master themes in this repository and copy them into each book.
-Refresh both `.theme` files and both SCSS files together when adopting updates,
-preserving the website's `$rthighlight` values in the local SCSS copies.
+Keep this repository as the source of truth. Refresh all theme SCSS (including
+underscore-prefixed partials), both `.theme` files, and both notices together.
+Do not edit generated consumer copies. In docs-rtemis, a shared pre-render hook
+automatically refreshes all four books from the configured local checkout;
+`just render` rebuilds and syncs them, and `just sync-theme` refreshes open
+previews' local theme files. Other consumers must adopt the complete payload
+when updating; their existing copies are not changed by editing this repository.
 
 ## Preview and matching
 
