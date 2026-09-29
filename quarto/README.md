@@ -31,6 +31,8 @@ and callouts. Both color modes import the same partials.
 Change shared appearance here rather than editing consumer copies. The accent
 `$rthighlight` in the two mode files controls links, primary controls, sidebar
 highlights, and the webR run icon. Syntax colors are independent of the accent.
+The [pkgdown adapter](../pkgdown/README.md) reads these same defaults and syntax
+palettes to style companion API reference sites.
 
 For a book's front page, opt in to the shared landing layout:
 

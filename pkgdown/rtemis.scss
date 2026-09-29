@@ -1,0 +1,161 @@
+// Adapter for pkgdown's Bootstrap 5 markup. --rt-* values and syntax styles
+// are compiled from the Quarto sources by rtemis.R on every build.
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: var(--rt-font-family-sans-serif);
+  font-size: var(--rt-font-size-base);
+}
+
+:root, [data-bs-theme] {
+  --bs-body-bg: var(--rt-body-bg);
+  --bs-body-bg-rgb: var(--rt-body-bg-rgb);
+  --bs-body-color: var(--rt-body-color);
+  --bs-body-color-rgb: var(--rt-body-color-rgb);
+  --bs-heading-color: var(--rt-body-color);
+  --bs-primary: var(--rt-rthighlight);
+  --bs-primary-rgb: var(--rt-rthighlight-rgb);
+  --bs-link-color: var(--rt-rthighlight);
+  --bs-link-color-rgb: var(--rt-rthighlight-rgb);
+  --bs-link-hover-color: var(--rt-rthighlight);
+  --bs-link-hover-color-rgb: var(--rt-rthighlight-rgb);
+  --bs-code-color: var(--rt-code-block-color);
+}
+
+a { text-decoration: none; }
+main a:hover { text-decoration: underline; }
+
+h2 { font-size: var(--rt-h2-font-size); }
+h3 { font-size: var(--rt-h3-font-size); }
+
+.navbar {
+  --bs-secondary-color: var(--rt-navbar-fg);
+  --bs-navbar-color: var(--rt-navbar-fg);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-brand-color: var(--rt-navbar-fg);
+  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-toggler-border-color: #666;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23eeeeee' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  color: var(--rt-navbar-fg);
+  padding-block: var(--rt-navbar-padding-y);
+  box-shadow: none;
+
+  .nav-link { font-weight: 400; }
+  small { color: var(--rt-navbar-fg); opacity: .65; }
+  .form-control {
+    color: #eee;
+    background-color: #303030;
+    border-color: #555;
+    &::placeholder { color: #ccc; }
+    &:focus { border-color: var(--rt-rthighlight); }
+  }
+}
+
+// Match both modes, including pkgdown's more specific dark navbar selector.
+:root .navbar { background: var(--rt-navbar-bg); }
+.navbar > .container { align-items: center; }
+
+.nav-item.active .nav-link { background: rgba(255, 255, 255, .1); }
+.navbar .dropdown-menu { font-size: .9rem; }
+
+pre, code, kbd, samp {
+  font-family: var(--rt-font-family-monospace);
+}
+
+:root pre {
+  color: var(--rt-code-block-color);
+  background: var(--rt-code-block-bg);
+  border: 0;
+  border-radius: .25rem;
+  padding: .85rem 1rem;
+}
+
+:root pre code, :root p code, :root li code, :root td code,
+:root h1 code, :root h2 code, :root h3 code, :root h4 code {
+  background: transparent;
+}
+
+pre code { white-space: pre; }
+:root .sourceCode { border: 0; }
+
+// Source uses the same pre surface as Usage. Output is a separate sibling,
+// with normal document whitespace and each chart's own background and size.
+.rtemis-output {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.rtemis-output-display {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.rtemis-output .html-widget {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.rtemis-output img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root .rtemis-output-text pre {
+  padding: 0;
+  background: transparent;
+}
+
+// These widgets render their own light/dark palettes. pkgdown's automatic
+// image inversion would invert them a second time (including nested widgets).
+:root .html-widget.rtemis-draw,
+:root .html-widget.rtemis-graph,
+:root .html-widget.rtemis-map {
+  filter: none;
+}
+
+// Include keyboard users and touchscreens in the copy affordance.
+.hasCopyButton:focus-within .btn-copy-ex { visibility: visible; }
+.btn-copy-ex {
+  color: var(--rt-code-block-color);
+  background: var(--rt-code-block-bg);
+  border-color: var(--bs-border-color);
+  border-radius: .25rem;
+}
+
+.tooltip {
+  --bs-tooltip-bg: #181818;
+  --bs-tooltip-color: #f7f7f7;
+  --bs-tooltip-opacity: 1;
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--rt-body-color);
+}
+
+.table td, .table th { padding-block: .65rem; }
+.table code a { color: var(--rt-rthighlight); }
+#toc > .nav a.nav-link {
+  color: var(--rt-body-color);
+  border-radius: .25rem;
+  &.active { color: var(--rt-rthighlight); }
+}
+footer { font-size: .8rem; }
+
+@media (hover: none) {
+  .btn-copy-ex { visibility: visible; }
+}
+
+@media (max-width: 575.98px) {
+  // Keep code within the content column, including reference usage blocks.
+  :root div > div > pre { margin-inline: 0; }
+  .btn-copy-ex { right: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headroom { transition: none; }
+}
