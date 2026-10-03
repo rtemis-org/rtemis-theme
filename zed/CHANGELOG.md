@@ -1,15 +1,11 @@
 # Changelog
 
-## Unreleased
-
-- Removed italics from comments and documentation comments in both themes.
-
 ## 0.1.1
 
+- Removed italics from comments and documentation comments in both themes.
 - Made Markdown emphasis italic.
 - Colored Markdown strikethrough text gray, matching VS Code.
 - Colored link URLs blue, matching VS Code.
-- Make text selection in agent panel transparent
 
 ## 0.1.0 - initial release
 

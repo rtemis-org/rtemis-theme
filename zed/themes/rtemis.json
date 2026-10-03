@@ -159,40 +159,40 @@
           {
             "cursor": "#6CA3A0",
             "background": "#6CA3A0",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           },
           {
             "cursor": "#79A2CE",
             "background": "#79A2CE",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           },
           {
             "cursor": "#DB9557",
             "background": "#DB9557",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           },
           {
             "cursor": "#E397EA",
             "background": "#E397EA",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           },
           {
             "cursor": "#A3A4F8",
             "background": "#A3A4F8",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           },
           {
             "cursor": "#F07778",
             "background": "#F07778",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           },
           {
             "cursor": "#B3CFE8",
             "background": "#B3CFE8",
-            "selection": "#FFFFFF1F"
+            "selection": "#303030"
           }
         ],
-        "element.selection_background": "#FFFFFF1F",
+        "element.selection_background": "#303030",
         "drop_target.border": "#6CA3A0",
         "debugger.accent": "#F07778",
         "search.active_match_background": "#A3A3A318",
@@ -785,40 +785,40 @@
           {
             "cursor": "#346B69",
             "background": "#346B69",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           },
           {
             "cursor": "#345B82",
             "background": "#345B82",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           },
           {
             "cursor": "#955301",
             "background": "#955301",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           },
           {
             "cursor": "#8F3799",
             "background": "#8F3799",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           },
           {
             "cursor": "#5B58A5",
             "background": "#5B58A5",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           },
           {
             "cursor": "#AB383F",
             "background": "#AB383F",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           },
           {
             "cursor": "#4D667C",
             "background": "#4D667C",
-            "selection": "#0000001A"
+            "selection": "#E1E1E1"
           }
         ],
-        "element.selection_background": "#0000001A",
+        "element.selection_background": "#E1E1E1",
         "drop_target.border": "#346B69",
         "debugger.accent": "#AB383F",
         "search.active_match_background": "#7D7D7D18",
