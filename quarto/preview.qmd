@@ -2,6 +2,7 @@
 title: "rtemis Quarto themes"
 format:
   html:
+    css: fonts.css
     theme:
       light: rtemis-light.scss
       dark: rtemis-dark.scss

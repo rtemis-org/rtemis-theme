@@ -14,6 +14,7 @@ partials, syntax palettes, license, and notices. Merge into `_quarto.yml`:
 ```yaml
 format:
   html:
+    css: themes/rtemis/fonts.css
     theme:
       light: themes/rtemis/rtemis-light.scss
       dark: themes/rtemis/rtemis-dark.scss
@@ -65,6 +66,7 @@ For a single-mode HTML book:
 ```yaml
 format:
   html:
+    css: themes/rtemis/fonts.css
     theme: themes/rtemis/rtemis-light.scss
     syntax-highlighting: themes/rtemis/rtemis-light.theme
 ```
@@ -80,6 +82,53 @@ format:
 The HTML SCSS files do not apply to PDF. Older Quarto versions use
 `highlight-style` in place of `syntax-highlighting`; the theme files are the same.
 The configurations above were checked with Quarto 1.10.18 and its Pandoc 3.10.
+
+## Fonts
+
+Geist Sans loads from Google Fonts. Geist Mono loads from the bundled
+`fonts/GeistMono-Variable.woff2`, taken from the official `geist@1.7.2` npm
+package (`dist/fonts/geist-mono/GeistMono-Variable.woff2`). The variable font
+supports weights 100–900 and includes the `ss11` coding ligature feature.
+The shared rules enable this feature on `pre`, `code`, `kbd`, and `samp`.
+
+Copy `fonts.css` and the `fonts/` directory together with the SCSS files.
+Load `fonts.css` through `format.html.css` (or the chosen HTML-derived format).
+The font URL resolves relative to this stylesheet, including when the theme
+lives in a nested directory. Quarto copies the referenced font to the output.
+Include the font license as a project resource, adjusting the theme path:
+
+```yaml
+project:
+  resources:
+    - themes/rtemis/fonts/OFL.txt
+```
+
+The font is distributed under the SIL Open Font License in `fonts/OFL.txt`.
+Rendering requires no npm installation. Font updates retain the full font's
+OpenType features; Google Fonts subsets omit `ss11`.
+
+## Page footer
+
+Use Quarto's native book footer for a centered logo and copyright group:
+
+```yaml
+book:
+  page-footer:
+    border: false
+    center: |
+      <span class="rtemis-footer">
+        <a href="https://www.rtemis.org/"><img src="/assets/favicon.svg" alt="rtemis"></a>
+        <span>© 2026 E.D. Gennatas</span>
+      </span>
+```
+
+Set the image, link, copyright holder, and year range for the book. The image
+path starts at the project root so it also works for nested chapters. Websites
+use the same `page-footer` configuration under `website` instead of `book`.
+The theme supplies compact spacing, subdued text, and a logo height of
+1.25rem. The group wraps on narrow screens. Add `class="inv"` to a black logo
+image to invert it in dark mode; colored logos can retain their colors.
+The footer is opt-in and does not add attribution to other theme consumers.
 
 ## Share updates across books
 

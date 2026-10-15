@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Improved contrast of the terminal's "History restored" banner in the dark theme.
 - Removed italics from comments and documentation comments in both themes.
 
 ## [0.1.2]
