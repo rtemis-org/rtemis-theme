@@ -537,37 +537,7 @@
             "font_weight": 400
           },
           "title": {
-            "color": "#F07778",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h1": {
-            "color": "#F07778",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h2": {
-            "color": "#E397EA",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h3": {
-            "color": "#B3CFE8",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h4": {
             "color": "#6CA3A0",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h5": {
-            "color": "#6CA3A0",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h6": {
-            "color": "#B3CFE8",
             "font_style": "normal",
             "font_weight": 400
           },
@@ -1163,37 +1133,7 @@
             "font_weight": 400
           },
           "title": {
-            "color": "#AB383F",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h1": {
-            "color": "#AB383F",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h2": {
-            "color": "#8F3799",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h3": {
-            "color": "#4D667C",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h4": {
             "color": "#346B69",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h5": {
-            "color": "#346B69",
-            "font_style": "normal",
-            "font_weight": 400
-          },
-          "title.h6": {
-            "color": "#4D667C",
             "font_style": "normal",
             "font_weight": 400
           },

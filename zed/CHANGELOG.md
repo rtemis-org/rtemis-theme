@@ -2,6 +2,7 @@
 
 ## 0.1.1
 
+- Colored Markdown headings green.
 - Removed italics from comments and documentation comments in both themes.
 - Made Markdown emphasis italic.
 - Colored Markdown strikethrough text gray, matching VS Code.

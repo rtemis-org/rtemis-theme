@@ -1187,7 +1187,7 @@
         "markup.heading.heading-0.asciidoc"
       ],
       "settings": {
-        "foreground": "#F07778"
+        "foreground": "#6CA3A0"
       }
     },
     {
@@ -1202,7 +1202,7 @@
         "markup.heading.heading-1.asciidoc"
       ],
       "settings": {
-        "foreground": "#E397EA"
+        "foreground": "#79A2CE"
       }
     },
     {
@@ -1216,7 +1216,7 @@
         "markup.heading.heading-2.asciidoc"
       ],
       "settings": {
-        "foreground": "#B3CFE8"
+        "foreground": "#A3A4F8"
       }
     },
     {
