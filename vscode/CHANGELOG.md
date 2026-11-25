@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
+
 - Set heading levels 1, 2, and 3 to rtemis green, blue, and purple in both themes.
 - Improved contrast of the terminal's "History restored" banner in the dark theme.
 - Removed italics from comments and documentation comments in both themes.

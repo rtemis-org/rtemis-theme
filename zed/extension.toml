@@ -3,6 +3,6 @@ name = "rtemis theme"
 version = "0.1.1"
 schema_version = 1
 authors = ["Stathis Gennatas"]
-description = "Dark and light rtemis themes with neutral gray interfaces and paired syntax colors."
+description = "Dark, dark-gray, and light rtemis themes with neutral gray interfaces and paired syntax colors."
 repository = "https://github.com/rtemis-org/rtemis-theme"
 themes = ["themes/rtemis.json"]

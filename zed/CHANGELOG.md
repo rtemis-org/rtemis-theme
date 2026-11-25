@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
+
 ## 0.1.1
 
 - Colored Markdown headings green.
