@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
+- Made Markdown headings bold across all themes.
 
 ## 0.1.1
 

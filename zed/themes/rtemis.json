@@ -539,7 +539,7 @@
           "title": {
             "color": "#6CA3A0",
             "font_style": "normal",
-            "font_weight": 400
+            "font_weight": 700
           },
           "type": {
             "color": "#B3CFE8",
@@ -1135,7 +1135,7 @@
           "title": {
             "color": "#78ADA9",
             "font_style": "normal",
-            "font_weight": 400
+            "font_weight": 700
           },
           "type": {
             "color": "#B3CFE8",
@@ -1731,7 +1731,7 @@
           "title": {
             "color": "#346B69",
             "font_style": "normal",
-            "font_weight": 400
+            "font_weight": 700
           },
           "type": {
             "color": "#4D667C",
