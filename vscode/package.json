@@ -2,7 +2,7 @@
 	"name": "rtemis-dark",
 	"displayName": "rtemis theme",
 	"description": "rtemis VS Code theme",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"publisher": "egenn",
 	"repository": {
 		"type": "git",

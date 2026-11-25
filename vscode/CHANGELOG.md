@@ -1,12 +1,11 @@
 # Change Log
 
-## Unreleased
+## [0.1.3] - 2026-11-25
 
 - Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
-
-- Set heading levels 1, 2, and 3 to rtemis teal, blue, and purple, with levels 4–6 sharing H3 purple across all themes.
+- Set Markdown H1 to teal, H2 to blue, and H3–H6 to lavender across all themes.
 - Improved contrast of the terminal's "History restored" banner in the dark theme.
-- Removed italics from comments and documentation comments in both themes.
+- Removed italics from comments and documentation comments across all themes.
 
 ## [0.1.2]
 
