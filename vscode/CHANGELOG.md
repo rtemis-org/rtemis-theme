@@ -4,7 +4,7 @@
 
 - Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
 
-- Set heading levels 1, 2, and 3 to rtemis teal, blue, and purple, with levels 4–6 sharing teal across all themes.
+- Set heading levels 1, 2, and 3 to rtemis teal, blue, and purple, with levels 4–6 sharing H3 purple across all themes.
 - Improved contrast of the terminal's "History restored" banner in the dark theme.
 - Removed italics from comments and documentation comments in both themes.
 
