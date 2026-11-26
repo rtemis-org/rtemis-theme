@@ -18,7 +18,15 @@ muted text to preserve contrast in selections and highlights.
 `rtemis-gray` uses pure white text on medium gray (`#484848`), with lighter
 syntax colors and near-white comments. `rtemis-light-gray` uses pure black text
 on light gray (`#AAAAAA`), with darker syntax colors and near-black comments.
-Both match the VS Code variants and use upright comments and bold teal headings.
+Both match the VS Code variants and use upright comments and bold foreground headings.
+
+Search matches use bright translucent orange backgrounds, with a stronger fill for the active match.
+The active line number uses the editor foreground color; other line numbers remain muted.
+The active editor line has no background shading.
+
+Symbol highlights use blue fills, bracket highlights use violet, and yank feedback uses teal.
+Selections use blue backgrounds. Diff and conflict regions have stronger green/red/blue fills;
+scrollbar and minimap thumbs remain visible at rest and strengthen on hover and drag.
 
 ## Install
 

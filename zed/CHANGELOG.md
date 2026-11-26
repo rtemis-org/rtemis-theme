@@ -2,6 +2,12 @@
 
 ## 0.1.3 - 2026-11-25
 
+- Removed active editor line shading and used the editor foreground color for the active line number.
+
+- Strengthened symbol, bracket, yank, selection, diff, conflict, scrollbar, and minimap highlights.
+- Improved muted text on pressed controls, predictive text, and dark/light line numbers.
+- Increased search highlight visibility with translucent orange fills for active and other matches.
+
 - Added rtemis-gray with white text on medium gray and rtemis-light-gray with black text on light gray, matching VS Code.
 - Adjusted syntax colors, comments, selections, and highlights for the new gray backgrounds.
 
