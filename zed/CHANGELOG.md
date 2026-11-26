@@ -8,7 +8,7 @@
 ## 0.1.2 - 2026-11-25
 
 - Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
-- Made Markdown headings bold and teal across all themes.
+- Made Markdown headings bold in the editor foreground color across all themes.
 - Removed italics from comments and documentation comments across all themes.
 - Made Markdown emphasis italic.
 - Colored Markdown strikethrough text gray, matching VS Code.
