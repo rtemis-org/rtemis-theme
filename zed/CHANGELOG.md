@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3 - 2026-11-25
+
+- Added rtemis-gray with white text on medium gray and rtemis-light-gray with black text on light gray, matching VS Code.
+- Adjusted syntax colors, comments, selections, and highlights for the new gray backgrounds.
+
 ## 0.1.2 - 2026-11-25
 
 - Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.

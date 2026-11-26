@@ -2,6 +2,7 @@
 
 ## [0.1.3] - 2026-11-25
 
+- Added rtemis-gray with white text and rtemis-light-gray with black text, adjusted syntax colors, and comments close to body text in brightness.
 - Added rtemis-dark-gray with a lighter charcoal background and adjusted text contrast.
 - Set Markdown H1 to teal, H2 to blue, and H3–H6 to lavender across all themes.
 - Improved contrast of the terminal's "History restored" banner in the dark theme.

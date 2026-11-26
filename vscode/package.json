@@ -32,6 +32,16 @@
 				"label": "rtemis-light",
 				"uiTheme": "vs",
 				"path": "./themes/rtemis-light-color-theme.json"
+			},
+			{
+				"label": "rtemis-gray",
+				"uiTheme": "vs-dark",
+				"path": "./themes/rtemis-gray-color-theme.json"
+			},
+			{
+				"label": "rtemis-light-gray",
+				"uiTheme": "vs",
+				"path": "./themes/rtemis-light-gray-color-theme.json"
 			}
 		]
 	},
